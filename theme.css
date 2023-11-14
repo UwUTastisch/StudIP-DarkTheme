@@ -1,3 +1,9 @@
+/* ==UserStyle==
+@name         StudIP DarkTheme
+@version      20231114.13.23
+@namespace    ?
+==/UserStyle== */
+
 @-moz-document url-prefix("https://studip."), url-prefix("http://studip.") {
 #barBottomContainer {
     background: linear-gradient(90deg, #8a2a2a, #1016ae);
