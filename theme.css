@@ -182,7 +182,23 @@ url-prefix("http://studip.") {
         padding: 0;
         text-align: center;
         line-height: 1em;
+        transition: all 0.5s ease-in-out !important;
     }
+
+    body:not(.fixed) #barTopMenu li.active > a,
+    body:not(.fixed) #barTopMenu li:hover > a {
+        rotate: 360deg;
+        transition: all 0.5s ease-in-out !important;
+    }
+
+    body:not(.fixed) #barTopMenu li.active > a img,
+    body:not(.fixed) #barTopMenu li:hover > a img {
+        -webkit-filter: hue-rotate(0deg) saturate(100%) brightness(100%) !important;
+        filter: hue-rotate(170deg) saturate(100%) brightness(200%) !important;
+        rotate: -720deg;
+        transition: all 0.5s ease-in-out !important;
+    }
+
 
     #flex-header {
         height: 80px;
