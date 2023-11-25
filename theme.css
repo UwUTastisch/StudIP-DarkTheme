@@ -7,7 +7,7 @@
 @license      GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007
 ==/UserStyle== */
 @-moz-document url-prefix("https://studip."),
-url-prefix("http://studip.") {
+url-prefix("http://studip."), url-prefix("https://demo.studip") {
     #barBottomContainer {
         background: linear-gradient(90deg, #8a2a2a, #1016ae);
         color: #333;
@@ -189,6 +189,8 @@ url-prefix("http://studip.") {
     body:not(.fixed) #barTopMenu li:hover > a {
         rotate: 360deg;
         transition: all 0.5s ease-in-out !important;
+        border: none;
+        border-radius: 0;
     }
 
     body:not(.fixed) #barTopMenu li.active > a img,
@@ -197,6 +199,8 @@ url-prefix("http://studip.") {
         filter: hue-rotate(170deg) saturate(100%) brightness(200%) !important;
         rotate: -720deg;
         transition: all 0.5s ease-in-out !important;
+          transform: scale(1.3, 1.3) ;
+        border-radius: 0;
     }
 
 
@@ -235,8 +239,10 @@ url-prefix("http://studip.") {
         background: #111;
         color: deeppink;
         font-weight: 700;
-        padding: 4px;
-        margin: 2px;
+        padding: 3px 8px;
+        margin: 4px 2px;
+        border-radius: 29.5px;
+        font-size: 15px;
     }
 
     ul.widget-list {
@@ -308,10 +314,10 @@ url-prefix("http://studip.") {
     }
 
     .ui-widget-content {
-        background: #ffffff05;
         border: 1px solid darkmagenta;
         color: orange;
         border-radius: 10px;
+        background: #1118;
     }
 
     .studip-widget .widget-header {
@@ -1130,5 +1136,77 @@ url-prefix("http://studip.") {
     .uro_os_box {
         border: 1px solid darkmagenta;
         border-radius: 5px;
+    }
+
+
+    #barTopMenu li a canvas,
+    #barTopMenu li a img,
+    #layout-sidebar .sidebar-image > img,
+    .recolor {
+        -webkit-filter: hue-rotate(0deg) saturate(100%) brightness(100%);
+
+        filter: hue-rotate(0deg) saturate(100%) brightness(100%);
+
+        border-radius: 10px;
+    }
+    #sidebar-navigation {
+        border-radius: 10px;
+    }
+
+    .sidebar-widget {
+        border-radius: 10px;
+    }
+
+    .sidebar-widget-cloud {
+        margin-left: 8px;
+    }
+
+    #blubber_threads li.more {
+        background: linear-gradient(45deg, #8a2a2a80, #1016ae80);
+        cursor: pointer;
+        color: pink;
+        padding-left: 70px;
+        border-bottom: 0px solid darkmagenta;
+        line-height: 30px;
+    }
+    #blubber_threads li.more:hover {
+        background-color: #000;
+    }
+
+    #blubber_threads li.more::before {
+        background-repeat: no-repeat;
+        content: ' ';
+        display: inline-block;
+        height: 16px;
+        margin-right: 0;
+        background-image: url("https://studip.uni-rostock.de/assets/images/icons/blue/arr_1right.svg");
+        background-size: 16px;
+        vertical-align: text-top;
+        width: 16px;
+        filter: hue-rotate(60deg) saturate(100%) brightness(100%) !important;
+    }
+
+    .text-bottom {
+        filter: invert(80%);
+    }
+    ul.widget-list > li {
+        background-repeat: no-repeat;
+        background-position: 0 1px;
+        background-size: 16px 16px;
+        padding-left: 20px;
+        word-wrap: break-word;
+        /*filter: hue-rotate(90deg) saturate(170%) brightness(140%);*/
+    }
+    #notification_container {
+        width: 49px;
+        height: 30px;
+        color: pink;
+        vertical-align: text-bottom;
+        background-color: transparent;
+        position: relative;
+    }
+    
+    form div.files-search.input-group input[type="text"] {
+        margin-right: 5px;
     }
 }
