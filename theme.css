@@ -7,7 +7,8 @@
 @license      GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007
 ==/UserStyle== */
 @-moz-document url-prefix("https://studip."),
-url-prefix("http://studip."), url-prefix("https://demo.studip") {
+url-prefix("http://studip."),
+url-prefix("https://demo.studip") {
     #barBottomContainer {
         background: linear-gradient(90deg, #8a2a2a, #1016ae);
         color: #333;
@@ -199,7 +200,7 @@ url-prefix("http://studip."), url-prefix("https://demo.studip") {
         filter: hue-rotate(170deg) saturate(100%) brightness(200%) !important;
         rotate: -720deg;
         transition: all 0.5s ease-in-out !important;
-          transform: scale(1.3, 1.3) ;
+        transform: scale(1.3, 1.3);
         border-radius: 0;
     }
 
@@ -1205,8 +1206,16 @@ url-prefix("http://studip."), url-prefix("https://demo.studip") {
         background-color: transparent;
         position: relative;
     }
-    
+
     form div.files-search.input-group input[type="text"] {
         margin-right: 5px;
+    }
+
+    .correct_item {
+        background: #0308;
+        border: 1px solid #b0ffb0;
+        padding: 3px;
+        border-radius: 5px;
+        margin: 3px 0.7px;
     }
 }
