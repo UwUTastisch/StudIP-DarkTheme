@@ -1213,7 +1213,8 @@ url-prefix("https://demo.studip") {
         border-radius: 0px 0px 10px 10px;
     }
 
-    #layout_wrapper #layout_page #tabs:empty,  #layout_wrapper #layout_page #tabs:-moz-only-whitespace {
+    #layout_wrapper #layout_page #tabs:empty,
+    #layout_wrapper #layout_page #tabs:-moz-only-whitespace {
         padding: 0px 0px;
         background: red;
     }
@@ -1295,21 +1296,19 @@ url-prefix("https://demo.studip") {
 
     .secondary-navigation .tabs_wrapper {
         padding-left: 30px;
-        }
+    }
 
     .js .drag-and-drop {
         background-color: #333;
         border-radius: 10px;
         margin-bottom: 7px;
         color: pink;
-
     }
 
     .blubber_thread {
         background: none;
         border: none;
         border-radius: 15px;
-
     }
 
     .blubber_thread .empty_blubber_background {
@@ -1317,14 +1316,14 @@ url-prefix("https://demo.studip") {
     }
 
     .blubber_thread .writer {
-  background-color: #214;
-  border: none;
-  border-radius: 0 0 15px 15px;
-}
+        background-color: #214;
+        border: none;
+        border-radius: 0 0 15px 15px;
+    }
 
     .blubber_thread .writer > textarea {
         background-color: #002;
-        color: pink !important ;
+        color: pink !important;
         border-radius: 10px;
     }
 
@@ -1340,15 +1339,15 @@ url-prefix("https://demo.studip") {
     }
 
     .blubber_thread ol.comments > li.theirs > .content {
-  background-color: darkmagenta;
-  margin-left: 10px;
+        background-color: darkmagenta;
+        margin-left: 10px;
         border-radius: 15px 15px 15px 0px;
         padding: 5px 5px 5px 10px;
-}
+    }
     .blubber_thread ol.comments > li > .time {
-  font-size: .8em;
-  color: inherit;
-}
+        font-size: .8em;
+        color: inherit;
+    }
 
     .blubber_thread ol.comments > li.theirs > .content > .name {
         color: orange;
@@ -1365,23 +1364,22 @@ url-prefix("https://demo.studip") {
         border-left: 10px solid #444;
     }
     .lowprio_info {
-  color: #ccc;
-}
+        color: #ccc;
+    }
 
     #responsive-container li {
-  border-top: 1px solid orange;
-
-}
+        border-top: 1px solid orange;
+    }
     #responsive-navigation {
         background: linear-gradient(135deg, #8a2a2a, #1016ae);
     }
 
     esponsive-navigation input:checked + label + ul > li {
-  background-color: #333a !important;
-}
+        background-color: #333a !important;
+    }
     #responsive-navigation ul > li {
-  background-color: #3338 !important;
-}
+        background-color: #3338 !important;
+    }
     #globalsearch-searchbar #globalsearch-list {
         background: #333;
     }
@@ -1390,15 +1388,15 @@ url-prefix("https://demo.studip") {
     }
 
     #globalsearch-searchbar #globalsearch-list {
-    color: #ccc;
-}
+        color: #ccc;
+    }
     #globalsearch-searchbar #globalsearch-list section {
-  color: inherit;
-}
+        color: inherit;
+    }
     #globalsearch-searchbar #globalsearch-list section header {
-  color: darkmagenta;
-  margin: 5px 5px 0;
-}
+        color: darkmagenta;
+        margin: 5px 5px 0;
+    }
 
     #layout_wrapper #flex-header {
         border: none;
