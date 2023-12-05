@@ -102,12 +102,10 @@ url-prefix("https://demo.studip") {
         border-radius: 2px;
     }
     #tabs {
-        padding-top: 5px;
+        padding: 5px 0px;
         border-top: 0px;
         border-bottom: 0px;
         border-radius: 15px 15px 0 0;
-        margin-top: -15px;
-        padding-bottom: 15px;
         background: #333;
         z-index: 8 !important;
     }
@@ -200,32 +198,12 @@ url-prefix("https://demo.studip") {
         filter: hue-rotate(170deg) saturate(100%) brightness(200%) !important;
         rotate: -720deg;
         transition: all 0.5s ease-in-out !important;
-        transform: scale(1.3, 1.3);
+        transform: scale(1.4, 1.4) translatey(-20%);
         border-radius: 0;
     }
 
-
-    #flex-header {
-        height: 80px;
-        background-color: #f5f6f6;
-        position: relative;
-        z-index: 3;
-        padding-bottom: 15px;
-    }
-
     #page_title_container {
-        float: left;
-        background-color: #000;
-        border-bottom: 0px solid #d0d7e3;
-        line-height: 20px;
-        margin-left: 0px;
-        margin-right: 0px;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin-top: -15px;
-        min-height: 45px;
-        z-index: 8;
-        border-radius: 15px 15px 0 0;
+        background: black;
     }
 
     .sidebar-widget-content {
@@ -256,7 +234,7 @@ url-prefix("https://demo.studip") {
     .sidebar .sidebar-widget-placeholder {
         border: 0px;
         background: #222;
-        color: #333;
+        color: #ccc;
         ;
         margin: 15px 0 0;
     }
@@ -289,11 +267,11 @@ url-prefix("https://demo.studip") {
     }
 
     #flex-header {
-        height: 80px;
+        height: unset;
         background: linear-gradient(135deg, #3a1010, #03052f);
         position: relative;
         z-index: 3;
-        padding-bottom: 15px;
+        padding-bottom: 0px;
     }
 
     #tabs li.current a,
@@ -1217,5 +1195,212 @@ url-prefix("https://demo.studip") {
         padding: 3px;
         border-radius: 5px;
         margin: 3px 0.7px;
+    }
+
+    div.index_container div.index_main {
+        background: linear-gradient(45deg, #8a2a2a, #1016ae);
+        border-radius: 15px;
+        margin-bottom: 50px;
+    }
+
+    #layout_wrapper #layout_page .tabs_wrapper {
+        border: none;
+        background: none;
+    }
+
+    #layout_wrapper #layout_page #tabs {
+        padding: 5px 5px;
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    #layout_wrapper #layout_page #tabs:empty,  #layout_wrapper #layout_page #tabs:-moz-only-whitespace {
+        padding: 0px 0px;
+        background: red;
+    }
+
+    #tabs a,
+    #tabs span.quiet,
+    .smiley-tabs a {
+        margin: 0 0px;
+    }
+
+
+    #tour_controls {
+        background-color: #000;
+        border: none;
+        border-radius: 15px;
+    }
+
+    #tour_tip {
+        background: linear-gradient(90deg, #8a2a2a, #1016ae);
+        border: none;
+        border-radius: 15px;
+    }
+
+    .content-items .content-item {
+        background: linear-gradient(150deg, #661c1c, #03052f);
+        border: none;
+        border-radius: 15px;
+    }
+
+    .cw-contents-overview-teaser,
+    .oer_search .browser {
+        background: #111c;
+        border-radius: 15px;
+    }
+
+    .oer_search .oneliner .frame {
+        border: none;
+    }
+
+    .oer_search .oneliner button {
+        border: none;
+        background: #0008;
+        border-radius: 15px;
+    }
+
+    table.course-search caption.legend {
+        background: linear-gradient(45deg, #8a2a2a80, #1016ae80);
+        border: none;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    table.course-search {
+        border: none;
+    }
+
+    table.show-tree table.show-tree-kids ul.semtree a:hover {
+        background: linear-gradient(176deg, #8a2a2a, #1016ae) !important;
+        border-radius: 5px;
+        padding: 0px 15px;
+        color: orange !important;
+    }
+    table.show-tree table.show-tree-kids ul.semtree a {
+        color: #ccc;
+    }
+
+    .responsive-display #layout_wrapper #layout_page .secondary-navigation {
+        background: black;
+    }
+
+    .secondary-navigation #layout_context_title {
+        background: #222;
+        padding-bottom: 5px;
+        border-radius: 0px 0px 15px 15px;
+    }
+
+    .secondary-navigation .colorblock {
+        width: 0%
+    }
+
+    .secondary-navigation .tabs_wrapper {
+        padding-left: 30px;
+        }
+
+    .js .drag-and-drop {
+        background-color: #333;
+        border-radius: 10px;
+        margin-bottom: 7px;
+        color: pink;
+
+    }
+
+    .blubber_thread {
+        background: none;
+        border: none;
+        border-radius: 15px;
+
+    }
+
+    .blubber_thread .empty_blubber_background {
+        background-color: #213;
+    }
+
+    .blubber_thread .writer {
+  background-color: #214;
+  border: none;
+  border-radius: 0 0 15px 15px;
+}
+
+    .blubber_thread .writer > textarea {
+        background-color: #002;
+        color: pink !important ;
+        border-radius: 10px;
+    }
+
+    .blubber_thread ol.comments > li.theirs > .content::after {
+        background-color: transparent;
+        border: none;
+    }
+
+    .blubber_thread ol.comments > li.theirs > .content::before {
+        background-color: transparent;
+        border-right-color: darkmagenta;
+        border-bottom: none;
+    }
+
+    .blubber_thread ol.comments > li.theirs > .content {
+  background-color: darkmagenta;
+  margin-left: 10px;
+        border-radius: 15px 15px 15px 0px;
+        padding: 5px 5px 5px 10px;
+}
+    .blubber_thread ol.comments > li > .time {
+  font-size: .8em;
+  color: inherit;
+}
+
+    .blubber_thread ol.comments > li.theirs > .content > .name {
+        color: orange;
+    }
+
+    .blubber_threads_widget .sidebar-widget-content ol li.active::after {
+        border-left: 10px solid #444;
+    }
+
+    .blubber_threads_widget .sidebar-widget-content ol li.active {
+        background: #444;
+    }
+    .blubber_threads_widget .sidebar-widget-content ol li.active::before {
+        border-left: 10px solid #444;
+    }
+    .lowprio_info {
+  color: #ccc;
+}
+
+    #responsive-container li {
+  border-top: 1px solid orange;
+
+}
+    #responsive-navigation {
+        background: linear-gradient(135deg, #8a2a2a, #1016ae);
+    }
+
+    esponsive-navigation input:checked + label + ul > li {
+  background-color: #333a !important;
+}
+    #responsive-navigation ul > li {
+  background-color: #3338 !important;
+}
+    #globalsearch-searchbar #globalsearch-list {
+        background: #333;
+    }
+    #globalsearch-searchbar #globalsearch-list a {
+        color: darkmagenta;
+    }
+
+    #globalsearch-searchbar #globalsearch-list {
+    color: #ccc;
+}
+    #globalsearch-searchbar #globalsearch-list section {
+  color: inherit;
+}
+    #globalsearch-searchbar #globalsearch-list section header {
+  color: darkmagenta;
+  margin: 5px 5px 0;
+}
+
+    #layout_wrapper #flex-header {
+        border: none;
     }
 }
