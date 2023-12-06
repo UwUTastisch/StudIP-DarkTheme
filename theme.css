@@ -99,8 +99,24 @@ url-prefix("https://demo.studip") {
 
     #layout-sidebar {
         background: linear-gradient(135deg, #8a2a2a30, #1016ae30);
-        border-radius: 2px;
+        border-radius: 20px;
+        margin-bottom: 20px;
     }
+
+
+    .sidebar .sidebar-image {
+        border-radius: 17px 17px 10px 10px;
+        width: 260px;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
+    .sidebar .sidebar-context {
+        background-color: unset;
+        border-radius: 17px 10px 10px 10px;
+    }
+
+
     #tabs {
         padding: 5px 0px;
         border-top: 0px;
@@ -236,7 +252,7 @@ url-prefix("https://demo.studip") {
         background: #222;
         color: #ccc;
         ;
-        margin: 15px 0 0;
+        margin: 15px 5px 0;
     }
 
     select:not([multiple]):not([size]) {
@@ -1119,7 +1135,6 @@ url-prefix("https://demo.studip") {
 
 
     #barTopMenu li a canvas,
-    #barTopMenu li a img,
     #layout-sidebar .sidebar-image > img,
     .recolor {
         -webkit-filter: hue-rotate(0deg) saturate(100%) brightness(100%);
@@ -1128,6 +1143,15 @@ url-prefix("https://demo.studip") {
 
         border-radius: 10px;
     }
+
+    #barTopMenu li a img {
+        -webkit-filter: hue-rotate(0deg) saturate(100%) brightness(100%);
+
+        filter: hue-rotate(0deg) saturate(100%) brightness(100%);
+
+        border-radius: 0px;
+    }
+
     #sidebar-navigation {
         border-radius: 10px;
     }
@@ -1400,5 +1424,13 @@ url-prefix("https://demo.studip") {
 
     #layout_wrapper #flex-header {
         border: none;
+    }
+
+    #barTopMenu li a canvas,
+    #layout-sidebar .sidebar-image > img,
+    .sidebar .avatar-medium,
+    .sidebar .course-avatar-medium,
+    .sidebar .stream-avatar-medium {
+        border-radius: 17px 10px 17px 10px;
     }
 }
