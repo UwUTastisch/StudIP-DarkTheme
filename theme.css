@@ -1433,4 +1433,16 @@ url-prefix("https://demo.studip") {
     .sidebar .stream-avatar-medium {
         border-radius: 17px 10px 17px 10px;
     }
+
+    #messages .unread td.title > a {
+        font-weight: 700;
+        font-weight: bolder;
+        color: salmon;
+    }
+
+    #messages .unread td.title > a:hover {
+        font-weight: 700;
+        font-weight: bolder;
+        color: darkorange;
+    }
 }
