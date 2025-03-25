@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         StudIP DarkTheme
-@version      20240407.18.22
+@version      20250325.16.50
 @namespace    userstyles.world/user/UwUTastisch
 @description  A Futuristic Darktheme [WIP]
 @author       UwUTastisch
@@ -44,7 +44,6 @@ url-prefix("https://demo.studip") {
         -webkit-filter: hue-rotate(60deg) saturate(100%) brightness(177.3%) !important;
         filter: hue-rotate(60deg) saturate(100%) brightness(177.3%) !important;
     }
-
     select {
         background: #222;
         border: none;
@@ -71,7 +70,7 @@ url-prefix("https://demo.studip") {
         background: linear-gradient(90deg, #8a2a2a, #1016ae);
     }
 
-    .widget-links.sidebar-navigation>li.active a {
+    .widget-links.sidebar-navigation > li.active a {
         color: pink;
         padding-left: 4px;
     }
@@ -147,8 +146,8 @@ url-prefix("https://demo.studip") {
         line-height: 25px;
     }
 
-    #tabs2>li.current:after,
-    #tabs>li.current:after {
+    #tabs2 > li.current:after,
+    #tabs > li.current:after {
         background-color: #636971;
         height: -2px;
         margin-top: 0px;
@@ -177,7 +176,7 @@ url-prefix("https://demo.studip") {
         background-color: #0000;
     }
 
-    body:not(.fixed) #barTopMenu>li.active:after {
+    body:not(.fixed) #barTopMenu > li.active:after {
         background-color: #636971;
         height: 2px;
         margin-top: 3px;
@@ -201,16 +200,16 @@ url-prefix("https://demo.studip") {
         transition: all 0.5s ease-in-out !important;
     }
 
-    body:not(.fixed) #barTopMenu li.active>a,
-    body:not(.fixed) #barTopMenu li:hover>a {
+    body:not(.fixed) #barTopMenu li.active > a,
+    body:not(.fixed) #barTopMenu li:hover > a {
         rotate: 360deg;
         transition: all 0.5s ease-in-out !important;
         border: none;
         border-radius: 0;
     }
 
-    body:not(.fixed) #barTopMenu li.active>a img,
-    body:not(.fixed) #barTopMenu li:hover>a img {
+    body:not(.fixed) #barTopMenu li.active > a img,
+    body:not(.fixed) #barTopMenu li:hover > a img {
         -webkit-filter: hue-rotate(0deg) saturate(100%) brightness(100%) !important;
         filter: hue-rotate(170deg) saturate(100%) brightness(200%) !important;
         rotate: -720deg;
@@ -269,17 +268,17 @@ url-prefix("https://demo.studip") {
         padding-left: 10px;
     }
 
-    .widget-links.sidebar-navigation>li.active {
+    .widget-links.sidebar-navigation > li.active {
         background-color: #28497c00;
         margin-left: -4px;
         position: relative;
         margin-right: -5px;
     }
 
-    .widget-links.sidebar-navigation>li.active:after,
-    .widget-links.sidebar-navigation>li.active:before,
-    .widget-links.sidebar-views>li.active:after,
-    .widget-links.sidebar-views>li.active:before {
+    .widget-links.sidebar-navigation > li.active:after,
+    .widget-links.sidebar-navigation > li.active:before,
+    .widget-links.sidebar-views > li.active:after,
+    .widget-links.sidebar-views > li.active:before {
         display: none;
     }
 
@@ -344,7 +343,7 @@ url-prefix("https://demo.studip") {
         border-radius: 5px;
     }
 
-    #threadwriter>.row {
+    #threadwriter > .row {
         display: -ms-flexbox;
         display: -webkit-box;
         display: -webkit-box-flex;
@@ -359,7 +358,7 @@ url-prefix("https://demo.studip") {
         padding-top: 4px;
     }
 
-    #threadwriter>.row>textarea {
+    #threadwriter > .row > textarea {
         width: calc(100% - 90px);
         min-height: 50px;
         border: none;
@@ -368,7 +367,7 @@ url-prefix("https://demo.studip") {
         border-radius: 5px;
     }
 
-    #blubber_threads>.thread>.contextinfo {
+    #blubber_threads > .thread > .contextinfo {
         display: block;
         height: 30px;
         padding-left: 75px;
@@ -382,7 +381,7 @@ url-prefix("https://demo.studip") {
         background: linear-gradient(90deg, #ff5d5d96, #7479ff96);
     }
 
-    #blubber_threads .posting>.writer>textarea {
+    #blubber_threads .posting > .writer > textarea {
         display: block;
         width: calc(100% - 20px);
         height: 20px;
@@ -406,7 +405,7 @@ url-prefix("https://demo.studip") {
         padding-bottom: 0px;
     }
 
-    #blubber_threads .posting>.writer {
+    #blubber_threads .posting > .writer {
         display: -ms-flexbox;
         display: -webkit-box;
         display: -webkit-box-flex;
@@ -434,7 +433,7 @@ url-prefix("https://demo.studip") {
         background-color: unset;
     }
 
-    #blubber_threads .posting>.avatar .avatar_image {
+    #blubber_threads .posting > .avatar .avatar_image {
         border: 2px solid darkmagenta;
         margin-left: auto;
         margin-right: auto;
@@ -446,7 +445,7 @@ url-prefix("https://demo.studip") {
         background-color: white;
     }
 
-    #blubber_threads>li.thread.course .comments {
+    #blubber_threads > li.thread.course .comments {
         background-color: #212;
     }
 
@@ -506,7 +505,7 @@ url-prefix("https://demo.studip") {
         font-size: medium;
     }
 
-    article.studip header h1>a {
+    article.studip header h1 > a {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -546,14 +545,14 @@ url-prefix("https://demo.studip") {
         text-decoration: none;
     }
 
-    table.default>tbody>tr>th,
-    table.default>thead>tr>th {
+    table.default > tbody > tr > th,
+    table.default > thead > tr > th {
         background-color: black;
         border-bottom: 1px solid rgba(137, 154, 185, .2);
         border-top: 1px solid #1f3f70;
     }
 
-    table.default>caption {
+    table.default > caption {
         background-color: transparent;
         padding-top: 0;
         color: #bbb;
@@ -561,7 +560,7 @@ url-prefix("https://demo.studip") {
         text-align: left;
     }
 
-    table.default>tbody>tr>td {
+    table.default > tbody > tr > td {
         border-bottom: 1px solid #222;
         -webkit-transition: background-color .3s;
         transition: background-color .3s;
@@ -671,7 +670,7 @@ url-prefix("https://demo.studip") {
         overflow: hidden;
     }
 
-    form.default fieldset>legend {
+    form.default fieldset > legend {
         background: none;
         background: linear-gradient(90deg, #8a2a2a, #1016ae);
         border-bottom: 0;
@@ -685,7 +684,7 @@ url-prefix("https://demo.studip") {
         width: calc(100% + 22px);
     }
 
-    .widget-links.sidebar-views>li.active {
+    .widget-links.sidebar-views > li.active {
         background: #111;
         margin-left: -5px;
         -webkit-box-shadow: inset 0 0 0 1px #ffbd33;
@@ -774,7 +773,6 @@ url-prefix("https://demo.studip") {
             min-width: 32px;
             float: right;
         }
-
         border-radius: 10px;
     }
 
@@ -793,7 +791,7 @@ url-prefix("https://demo.studip") {
         border-radius: 10px;
     }
 
-    table.default>tfoot>tr>td {
+    table.default > tfoot > tr > td {
         background-color: #181818;
         border-top: 1px solid #8b008b;
         border-bottom-left-radius: 10px;
@@ -801,7 +799,7 @@ url-prefix("https://demo.studip") {
     }
 
     form.default fieldset,
-    form.default fieldset>legend {
+    form.default fieldset > legend {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
@@ -869,7 +867,7 @@ url-prefix("https://demo.studip") {
     }
 
     form.default fieldset,
-    form.default fieldset>legend {
+    form.default fieldset > legend {
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
         border: none;
@@ -995,7 +993,6 @@ url-prefix("https://demo.studip") {
     table td.printhead3 {
         background-color: white;
     }
-
     form.default label:not(.undecorated) .ckplaceholder,
     form.default label:not(.undecorated) input[type="date"],
     form.default label:not(.undecorated) input[type="email"],
@@ -1061,7 +1058,6 @@ url-prefix("https://demo.studip") {
     .addclip-widgets {
         color: inherit;
     }
-
     .rh_list {
         border-block-width: 2px;
         border: solid 2px;
@@ -1096,7 +1092,6 @@ url-prefix("https://demo.studip") {
         margin-top: 0;
         color: orange;
     }
-
     .ui-dialog-buttonpane.ui-widget-content.ui-helper-clearfix {
         background: #491e62 !important;
         border-radius: 10px;
@@ -1119,7 +1114,6 @@ url-prefix("https://demo.studip") {
         color: #ccc;
         border-radius: 10px;
     }
-
     .uro_os_header {
         background: linear-gradient(45deg, #8a2a2a80, #1016ae80);
         color: #ffa500;
@@ -1141,7 +1135,7 @@ url-prefix("https://demo.studip") {
 
 
     #barTopMenu li a canvas,
-    #layout-sidebar .sidebar-image>img,
+    #layout-sidebar .sidebar-image > img,
     .recolor {
         -webkit-filter: hue-rotate(0deg) saturate(100%) brightness(100%);
 
@@ -1178,7 +1172,6 @@ url-prefix("https://demo.studip") {
         border-bottom: 0px solid darkmagenta;
         line-height: 30px;
     }
-
     #blubber_threads li.more:hover {
         background-color: #000;
     }
@@ -1199,8 +1192,7 @@ url-prefix("https://demo.studip") {
     .text-bottom {
         filter: invert(80%);
     }
-
-    ul.widget-list>li {
+    ul.widget-list > li {
         background-repeat: no-repeat;
         background-position: 0 1px;
         background-size: 16px 16px;
@@ -1208,7 +1200,6 @@ url-prefix("https://demo.studip") {
         word-wrap: break-word;
         /*filter: hue-rotate(90deg) saturate(170%) brightness(140%);*/
     }
-
     #notification_container {
         width: 49px;
         height: 30px;
@@ -1309,7 +1300,6 @@ url-prefix("https://demo.studip") {
         padding: 0px 15px;
         color: orange !important;
     }
-
     table.show-tree table.show-tree-kids ul.semtree a {
         color: #ccc;
     }
@@ -1355,36 +1345,35 @@ url-prefix("https://demo.studip") {
         border-radius: 0 0 15px 15px;
     }
 
-    .blubber_thread .writer>textarea {
+    .blubber_thread .writer > textarea {
         background-color: #002;
         color: pink !important;
         border-radius: 10px;
     }
 
-    .blubber_thread ol.comments>li.theirs>.content::after {
+    .blubber_thread ol.comments > li.theirs > .content::after {
         background-color: transparent;
         border: none;
     }
 
-    .blubber_thread ol.comments>li.theirs>.content::before {
+    .blubber_thread ol.comments > li.theirs > .content::before {
         background-color: transparent;
         border-right-color: darkmagenta;
         border-bottom: none;
     }
 
-    .blubber_thread ol.comments>li.theirs>.content {
+    .blubber_thread ol.comments > li.theirs > .content {
         background-color: darkmagenta;
         margin-left: 10px;
         border-radius: 15px 15px 15px 0px;
         padding: 5px 5px 5px 10px;
     }
-
-    .blubber_thread ol.comments>li>.time {
+    .blubber_thread ol.comments > li > .time {
         font-size: .8em;
         color: inherit;
     }
 
-    .blubber_thread ol.comments>li.theirs>.content>.name {
+    .blubber_thread ol.comments > li.theirs > .content > .name {
         color: orange;
     }
 
@@ -1395,11 +1384,9 @@ url-prefix("https://demo.studip") {
     .blubber_threads_widget .sidebar-widget-content ol li.active {
         background: #444;
     }
-
     .blubber_threads_widget .sidebar-widget-content ol li.active::before {
         border-left: 10px solid #444;
     }
-
     .lowprio_info {
         color: #ccc;
     }
@@ -1407,23 +1394,19 @@ url-prefix("https://demo.studip") {
     #responsive-container li {
         border-top: 1px solid orange;
     }
-
     #responsive-navigation {
         background: linear-gradient(135deg, #8a2a2a, #1016ae);
     }
 
-    esponsive-navigation input:checked+label+ul>li {
+    esponsive-navigation input:checked + label + ul > li {
         background-color: #333a !important;
     }
-
-    #responsive-navigation ul>li {
+    #responsive-navigation ul > li {
         background-color: #3338 !important;
     }
-
     #globalsearch-searchbar #globalsearch-list {
         background: #333;
     }
-
     #globalsearch-searchbar #globalsearch-list a {
         color: darkmagenta;
     }
@@ -1431,11 +1414,9 @@ url-prefix("https://demo.studip") {
     #globalsearch-searchbar #globalsearch-list {
         color: #ccc;
     }
-
     #globalsearch-searchbar #globalsearch-list section {
         color: inherit;
     }
-
     #globalsearch-searchbar #globalsearch-list section header {
         color: darkmagenta;
         margin: 5px 5px 0;
@@ -1446,32 +1427,71 @@ url-prefix("https://demo.studip") {
     }
 
     #barTopMenu li a canvas,
-    #layout-sidebar .sidebar-image>img,
+    #layout-sidebar .sidebar-image > img,
     .sidebar .avatar-medium,
     .sidebar .course-avatar-medium,
     .sidebar .stream-avatar-medium {
         border-radius: 17px 10px 17px 10px;
     }
 
-    #messages .unread td.title>a {
+    #messages .unread td.title > a {
         font-weight: 700;
         font-weight: bolder;
         color: salmon;
     }
 
-    #messages .unread td.title>a:hover {
+    #messages .unread td.title > a:hover {
         font-weight: 700;
         font-weight: bolder;
         color: darkorange;
     }
-
+    
     .exercise_hint {
         background: unset;
     }
-
+    
     #forum .posting {
         border-radius: 10px;
         background: linear-gradient(150deg, #661c1c, #03052f);
     }
-
+    
+        
+    .tresen-header{
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        background: linear-gradient(90deg, #8a2a2a, #1016ae);
+        color: orange;
+        font-size: 1.1em;
+        font-weight: 700;
+        line-height: 2em;
+        padding: 0 1ex;
+        text-align: left;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    
+    table#mensa tbody {
+        background: linear-gradient(150deg, #661c1c, #1016ae);
+    }
+    
+    table#mensa, p#disclaimer{
+        border: none;
+    }
+    
+    .mensa_plan label, .mensa_plan td {
+        background-color: #0000;
+        border: 1px solid #0000 !important;
+    }
+    
+    table#mensa tr:nth-child(2n+1) {
+      background-color: #0008;
+    }
+    
+    table#mensa tr:nth-child(2n) {
+      background-color: #000a;
+    }
+    
+    
 }
